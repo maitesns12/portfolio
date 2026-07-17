@@ -18,7 +18,7 @@
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  --spine-w: 44px;
+  --spine-w: 60px;
   --edge: clamp(24px, 6vw, 88px);
   --transition: 420ms cubic-bezier(.16,.8,.24,1);
 }
@@ -89,7 +89,7 @@ em { font-style: italic; color: var(--wine-700); }
 /* ==========================================================================
    NAV
    ========================================================================== */
-.nav {
+nav {
   position: fixed;
   top: 0;
   left: var(--spine-w);
@@ -99,8 +99,21 @@ em { font-style: italic; color: var(--wine-700); }
   align-items: center;
   justify-content: flex-end;
   padding: 22px var(--edge);
-  mix-blend-mode: normal;
 }
+
+nav li{
+  background-color: var(--cream);
+  border-radius:20px;
+}
+
+nav li a{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom:5px;
+  margin-top:5px;
+}
+
+
 .nav-links {
   display: flex;
   gap: 32px;
@@ -118,13 +131,13 @@ em { font-style: italic; color: var(--wine-700); }
 .nav-links a::after {
   content: '';
   position: absolute;
-  left: 0; bottom: 0;
+  bottom: 0;
   width: 0%;
   height: 1px;
   background: var(--wine-700);
   transition: width var(--transition);
 }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover::after { width: 83%; }
 .nav-num {
   font-family: var(--font-mono);
   font-size: 10px;
