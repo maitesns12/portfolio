@@ -457,7 +457,7 @@ nav li a{
   width: max-content;
   gap: 64px;
   padding-right: 64px;
-  animation: marquee 20s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 .logos-track img {
   margin:0 20px;
